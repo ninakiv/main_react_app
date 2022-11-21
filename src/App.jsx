@@ -1,24 +1,23 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./components/css/settings.css";
+import "./components/css/uikit.css";
+
+import Icons from "./components/Icon/icon";
+import Buttons from "./components/Button/buttons";
+import Input from "./components/Input/input";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to aa.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <div className="box box_icon">
+        <Icons />
+      </div>
+      <div className="box box_input">
+        <Input />
+      </div>
+      <div className="box box_button">
+        <Buttons />
+      </div>
+    </section>
   );
 }
 
