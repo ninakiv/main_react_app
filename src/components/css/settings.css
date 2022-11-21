@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --black_color: #000000;
+  --main-background-color: #e5e5e5;
+  --border-color: #459df5;
+  --border-box-color: #8055ff;
+  --border-focus-color: #367dc4;
+  --lightblue-color: #bad8f5;
+  --blue-color: #459df5;
+  --red-color: #f53152;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: Ubuntu;
+}

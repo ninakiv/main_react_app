@@ -1,0 +1,100 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.input__area {
+  position: relative;
+}
+
+.input__sticker {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  /*font-family: Ubuntu;*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: var(--black_color);
+}
+
+.input__text-field {
+  appearance: none;
+  width: 100%;
+  height: 2rem;
+  border: 0.0625rem solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem 2rem 0.25rem 0.5rem;
+  box-sizing: border-box;
+  letter-spacing: 0px;
+  text-align: left;
+  background-color: var(--white-color);
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: var(--lightblue-color);
+}
+
+.input__icon {
+  width: 1rem;
+  height: 1rem;
+  stroke: var(--lightblue-color);
+  background-color: white;
+}
+
+.input__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.input__icon_disabled {
+  fill: var(--black_color);
+  background-color: var(--lightblue-color);
+}
+
+.input__text-field:empty {
+  color: var(--lightblue-color);
+}
+
+.input__text-field:focus {
+  outline-color: var(--border-focus-color);
+}
+
+.input__text-field:invalid {
+  border-color: var(--red-color);
+  color: var(--black_color);
+}
+
+.input__text-field:disabled {
+  background-color: var(--lightblue-color);
+  border-color: var(--blue-color);
+  color: var(--black_color);
+}
+
+.input__text-field:invalid ~ .input__button_clear {
+  opacity: 1;
+}
+
+.input__text-field:not(:empty) ~ .input__button_clear {
+  opacity: 1;
+}
+
+.input__text-field:disabled ~ .input__button_disabled {
+  opacity: 1;
+}
