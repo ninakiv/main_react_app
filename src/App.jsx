@@ -1,5 +1,5 @@
 import "./components/css/settings.css";
-import "./components/css/uikit.css";
+import "./components/css/main.css";
 
 import Icons from "./components/Icon/icon";
 import Buttons from "./components/Button/buttons";
